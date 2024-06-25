@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Robotoフォントを使用 */
+  background-color: black !important; /* 背景色を黒に変更 */
+  color: white; /* テキスト色を白に変更 */
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px; /* 左下の角を丸くする */
+  border-bottom-right-radius: 20px; /* 右下の角を丸くする */
+}
+
+h1, p {
+  font-weight: 700; /* 太字にする */
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 横に3つ */
+  grid-template-rows: repeat(2, 1fr);    /* 縦に2つ */
+  gap: 10px; /* 写真間の間隔を設定 */
+  padding: 10px; /* パディングを調整 */
+  justify-items: center; /* グリッドアイテムを中央に配置 */
+}
+
+.photo {
+  border-radius: 10px; /* 写真ブロック全体を丸くする */
+  overflow: hidden; /* 写真が丸みを帯びるようにする */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+}
